@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Ajax/Fetch Sample</h1>
+    
+    <p>Page loaded: <span class="page-loaded"></span></p>
+    
+    <section>
+        <h2>Loading HTML</h2>
+        <div class="html-placeholder"></div>
+        <button class="load-html-ajax">Load</button>
+        <button class="load-html-fetch">Fetch</button>
+    </section>
+    
+    <section>
+        <h2>Loading JSON</h2>
+        <div>
+            <p>Client name: <span class="client-name"></span></p>
+            <p>Account balance: <span class="account-balance"></span></p>
+        </div>
+        <button class="load-json-ajax">Load</button>
+        <button class="load-json-fetch">Fetch</button>
+    </section>
+    
+    <section>
+        <h2>Send form</h2>
+        <form class="login-form">
+            <label>
+                User name: <input type="text" name="user-name" required>
+            </label>
+            <br>
+            <label>
+                Password: <input type="password" name="password" required>
+            </label>
+            <br>
+            <input type="submit">
+            <br>
+            <p class="message-box"></p>
+        </form>
+    </section>
+    
+    
+    <section>
+        <h2>Sample Fetch request to public API</h2>
+    
+        <label>URL:
+            <input class="url" value="https://free.currencyconverterapi.com/api/v5/convert?q=USD_UAH&compact=y">
+        </label>
+        <button class="run-query">Get Data</button>
+    
+        <div class="public-api-result"></div>    
+    </section>
+    
+    <script src="js/index.js"></script>
+</body>
+</html>
